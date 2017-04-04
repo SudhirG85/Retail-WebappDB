@@ -24,16 +24,8 @@ public class Util {
     try {
     	
 
-		//for local configuration
-        /*Class.forName("com.mysql.jdbc.Driver");
-        logger.info("Loading mysql from local context");
-        //String url = "jdbc:mysql://127.0.0.1:10100/db8dad2d02e114ef6bc9d24e68367e33e"	
-        connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/retaildb1","root","root"); 
-        return connection;*/
-    	
     	Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-    	String dbURL = "jdbc:sqlserver://10.224.86.189:1433;database=TestDB-DEV;user=sa;password=password-1";
-	   // jdbc:sqlserver://HOSP_SQL1.company.com;user=name;password=abcdefg;database=Test
+    	String dbURL = "jdbc:sqlserver://10.224.86.189:1433;database=TestDB-TEST;user=sa;password=password-1";
     	Connection conn = DriverManager.getConnection(dbURL);
     	return conn;
 

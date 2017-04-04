@@ -19,7 +19,7 @@ public class RegressionTestIT {
 	  //System.setProperty("webdriver.chrome.driver", "C:\\Javalibs\\chromedriver.exe");
 	  //WebDriver	driver = new ChromeDriver();
 	  WebDriver	driver = new HtmlUnitDriver();
-	  driver.get("http://10.224.86.162:8080/RetailoneDBdev/");
+	  driver.get("http://10.224.86.162:8080/RetailoneDBtest/");
 	  Assert.assertEquals("Retail Application Demo", driver.getTitle());
 	  
 	  loginPage loginpage = new loginPage(driver);
